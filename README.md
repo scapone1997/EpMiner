@@ -6,6 +6,12 @@ Il progetto esteso consiste in una interfaccia grafica realizzata con JavaFX e C
 
 Descrizione delle cartelle:
 
+Shopping list:
+ 
+   * apples
+   * oranges
+   * pears
+
  _________________________________________ProgettoMap EpMiner________________________________________
 |
 |-------\Codice sorgente\
