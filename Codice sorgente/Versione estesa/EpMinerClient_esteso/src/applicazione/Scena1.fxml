@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="applicazione.ScenaUno">
+   <children>
+      <Label layoutX="179.0" layoutY="33.0" text="Introduzione ad EpMiner" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="inizia" layoutX="120.0" layoutY="558.0" mnemonicParsing="false" onAction="#iniziaScoperta" prefHeight="25.0" prefWidth="135.0" text="Inizia">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font></Button>
+      <Button fx:id="esci" layoutX="314.0" layoutY="558.0" mnemonicParsing="false" onAction="#chiudiProgramma" prefHeight="25.0" prefWidth="135.0" text="Esci">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font></Button>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <TextArea fx:id="introduzione" editable="false" layoutX="57.0" layoutY="79.0" prefHeight="456.0" prefWidth="474.0" text="Il software EPMiner è un'applicazione Client/Server realizzata per implementare&#10;l’algoritmo Apriori al fine di elaborare dati estratti da delle tabelle presenti in un &#10;Server. Per poter utilizzare l'applicazione è indispendabile avere il Server in ascolto. &#10;&#10;Nella schermata successiva vi sarà chiesto di compilare un form per inserire i dati&#10;necessari all'elaborazione di una richiesta. Nello specifico:&#10;- Il nome della tabella Target ;&#10;- Il nome della tabella Background;&#10;- Il valore del minimo supporto (un numero reale compreso fra zero e uno, zero&#10;   escluso);&#10;- Il valore del minimo grow-rate (un numero reale maggiore di zero);&#10;&#10;Vi sarà chiesto, inoltre, di scegliere una opzione fra &quot;Nuovo pattern&quot; e &quot;Ricerca in&#10;archivio&quot;. Scegliere la prima opzione  per effettuare un analisi con nuovi dati;&#10;scegliere la seconda se si vuole leggere una precedente elaborazione salvata &#10;nell'archivio. &#10;&#10;Premere &quot;Inizia&quot; per effettuare la richiesta, premere &quot;Esci&quot; per chiudere&#10;l'applicazione. &#10;&#10;Nota: nel caso il Server venga spento dopo una prima richiesta già effettuata e si&#10;voglia effettuarne un'altra, effettuare le seguenti azioni:&#10;- Premere &quot;Torna indietro&quot; per tornare alla schermata introduttiva;&#10;- Accendere il Server;&#10;- Tornare alla schermata di compilazione del form ed inserire la nuova richiesta;&#10;">
+         <font>
+            <Font name="Calibri Light" size="13.0" />
+         </font></TextArea>
+   </children>
+</Pane>

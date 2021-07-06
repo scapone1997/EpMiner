@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="applicazione.ScenaDue">
+   <children>
+      <Button fx:id="elabora" layoutX="81.0" layoutY="285.0" mnemonicParsing="false" onAction="#elaboraRichiesta" text="Elabora richiesta">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font></Button>
+      <Label layoutX="76.0" layoutY="52.0" text="Nome tabella target:">
+         <font>
+            <Font name="Calibri Light" size="13.0" />
+         </font></Label>
+      <Label layoutX="76.0" layoutY="112.0" text="Nome tabella background:">
+         <font>
+            <Font name="Calibri Light" size="13.0" />
+         </font></Label>
+      <Label layoutX="106.0" layoutY="170.0" text="Minimo supporto:">
+         <font>
+            <Font name="Calibri Light" size="13.0" />
+         </font></Label>
+      <TextField fx:id="tabellaTarget" layoutX="321.0" layoutY="48.0" prefHeight="25.0" prefWidth="209.0" />
+      <TextField fx:id="tabellaBackground" layoutX="321.0" layoutY="108.0" prefHeight="25.0" prefWidth="209.0" />
+      <TextField fx:id="minSup" layoutX="253.0" layoutY="166.0" prefHeight="25.0" prefWidth="42.0" />
+      <TextField fx:id="minGrow" layoutX="475.0" layoutY="166.0" prefHeight="25.0" prefWidth="42.0" />
+      <Label layoutX="331.0" layoutY="170.0" text="Minimo growrate:">
+         <font>
+            <Font name="Calibri Light" size="13.0" />
+         </font></Label>
+      <Label layoutX="52.0" layoutY="349.0" text="Esito ricerca/Problemi">
+         <font>
+            <Font name="Calibri Light" size="13.0" />
+         </font></Label>
+      <TextArea fx:id="risultati" editable="false" layoutX="46.0" layoutY="377.0" prefHeight="211.0" prefWidth="486.0">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font></TextArea>
+      <Button fx:id="cancella" layoutX="223.0" layoutY="285.0" mnemonicParsing="false" onAction="#cancellaForm" text="Cancella">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font></Button>
+      <Button fx:id="indietro" layoutX="321.0" layoutY="285.0" mnemonicParsing="false" onAction="#tornaIndietro" text="Torna indietro">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font></Button>
+      <Button fx:id="esci" layoutX="460.0" layoutY="285.0" mnemonicParsing="false" onAction="#chiudiProgramma" text="Esci">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font></Button>
+      <CheckBox fx:id="nuovo" layoutX="76.0" layoutY="217.0" mnemonicParsing="false" onAction="#nuovoPattern" text="Nuovo pattern">
+         <font>
+            <Font name="Calibri Light" size="13.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="archivio" layoutX="76.0" layoutY="247.0" mnemonicParsing="false" onAction="#risultatiInArchivio" text="Risultati in archivio">
+         <font>
+            <Font name="Calibri Light" size="13.0" />
+         </font></CheckBox>
+   </children>
+</Pane>

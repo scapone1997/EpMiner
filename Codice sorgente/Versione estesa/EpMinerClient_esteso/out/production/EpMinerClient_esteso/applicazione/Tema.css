@@ -1,0 +1,88 @@
+
+/* Colore pannello */
+.root {
+    -fx-body-color : #F5F5F5;
+    -fx-outer-border : #cecece;
+}
+
+/* Bordo bottone dopo click */
+.button:focused
+{
+    -fx-effect: dropshadow(gaussian,  #2996ff, 10, 0, 0, 0);
+}
+
+/* Forma bottone, dimensione del font, raggio del colore di background */
+.button {
+    -fx-font-size: 14;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-pref-height: 30;
+    -fx-min-width: 30;
+}
+
+/** BOTTONI CHE SI MUOVONO **/
+.button,.menu-button{
+    -fx-border-color: #cccccc;
+    -fx-text-fill: #333333;
+}
+
+/* Mouse sul bottone */
+.button:hover {
+    -fx-background-color: #7FDBFF;
+    -fx-border-color:  #7FDBFF;
+}
+
+/* Click sul bottone */
+.button:pressed, .button:selected {
+    -fx-background-color: #e6e6e6;
+    -fx-border-color: #acacac;
+    -fx-effect: innershadow(gaussian, #adadad, 10, 0, 0, 3);
+}
+
+/* Text-Field e Text-Area */
+.text-field, .text-area {
+    -fx-border-color: #cccccc;
+    -fx-background-color: white;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-effect: innershadow(gaussian, transparent, 0, 0, 0, 0);
+}
+
+/* Click su text-field e text-area */
+.text-field:focused, .text-area:focused {
+    -fx-border-color: #66afe9;
+    -fx-effect: dropshadow(gaussian, #66afe9, 10, 0, 0, 0);
+}
+
+
+/* Check-Box*/
+.check-box > .box {
+    -fx-background-radius: 3;
+    /*-fx-padding: 0.166667em 0.166667em 0.25em 0.25em; !* 2 2 3 3 *!*/
+    -fx-padding:0;
+    -fx-border-color: #00BFFF;
+    -fx-border-radius: 3;
+    -fx-background-color: white;
+}
+
+/*********** Caratteristica della check-box ************/
+.check-box > .box > .mark {
+    -fx-background-color: null;
+    -fx-padding: 0.416667em 0.416667em 0.5em 0.5em; /* 5 5 6 6 */
+    -fx-shape: "M927.936 272.992l-68.288-68.288c-12.608-12.576-32.96-12.576-45.536 0l-409.44 409.44-194.752-196.16c-12.576-12.576-32.928-12.576-45.536 0l-68.288 68.288c-12.576 12.608-12.576 32.96 0 45.536l285.568 287.488c12.576 12.576 32.96 12.576 45.536 0l500.736-500.768c12.576-12.544 12.576-32.96 0-45.536z";
+    -fx-background-insets: -3 -3 1 0;
+}
+
+.check-box:selected > .box > .mark {
+    -fx-background-color: linear-gradient(to bottom, #1E90FF, #00BFFF);
+}
+
+/*common things*/
+.check-box:hover > .box,
+.check-box:selected > .box {
+    -fx-background-color: linear-gradient(to bottom, white, #efefef);
+}
+
+.check-box:pressed > .box {
+    -fx-background-color: #87CEFA;
+}
