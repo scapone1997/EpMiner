@@ -1,8 +1,7 @@
 # EpMiner
-Caso di studio svolto durante il corso di "Metodi Avanzati di Programmazione" presso l'Università degli Studi di Bari.
+Caso di studio svolto durante il corso di "Metodi Avanzati di Programmazione" presso l'Università degli Studi di Bari, anno 2020-2021.
 
-Il progetto base è stato realizzato durante le esercitazioni di laboratorio previste nel corso.
-Il progetto esteso consiste in una interfaccia grafica realizzata con JavaFX e CSS.
+EpMiner è un'applicazione Client/Server che implementa l'algoritmo Apriori utilizzato nell'ambito del market/basket problem. E' stata realizzata una prima versione base che prevede l'utilizzo sia del Client che del Server da linea di comando ed una seconda versione che prevede il solo utilizzo del Client come applicazione Desktop. L'intero progetto è scritto in codice Java. Per la realizzazione dell'interfaccia grafica sono state utilizzate le tecnologie JavaFX e CSS.
 
 Descrizione delle cartelle:
 
