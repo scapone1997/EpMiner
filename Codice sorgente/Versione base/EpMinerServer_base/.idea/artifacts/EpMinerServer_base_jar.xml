@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="EpMinerServer_base:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/EpMinerServer_base_jar</output-path>
+    <root id="archive" name="EpMinerServer_base.jar">
+      <element id="module-output" name="EpMinerServer_base" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/mysql-connector-java-8.0.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$KOTLIN_BUNDLED$/lib/kotlin-stdlib.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$KOTLIN_BUNDLED$/lib/kotlin-reflect.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$KOTLIN_BUNDLED$/lib/kotlin-test.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
